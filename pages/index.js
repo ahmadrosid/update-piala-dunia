@@ -32,7 +32,7 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-black w-full min-h-screen h-full">
+    <div className="bg-black w-full min-h-screen h-full px-6">
       <div className="text-center p-8 space-y-4">
         <h1 className="text-6xl font-bold tracking-wide">Update Piala Dunia</h1>
         <p className="text-xl">Dapatkan update piala dunia QATAR 2022 secara Realtime dar Genggaman Anda.</p>
