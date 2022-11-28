@@ -66,9 +66,9 @@ export default function Home() {
           <h2 className="text-3xl">Next Match</h2>
           <div className="py-4">
             <ul className="space-y-4">
-              {nextMatch.slice(0, 4).map(item => <li className="flex gap-4">
+              {nextMatch.slice(0, 4).map(item => <li key={item.id} className="flex gap-4">
                 <div className="w-4">
-                  <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
                   <div className="h-full px-1 pb-3 pt-1">
                     <span className="block w-[4px] opacity-50 bg-amber-50 h-full"></span>
                   </div>
@@ -90,12 +90,12 @@ export default function Home() {
 
       <div className="py-8">
         <div className="max-w-[550px] mx-auto w-full">
-          <h2 className="text-3xl">completed Match</h2>
+          <h2 className="text-3xl">Completed Match</h2>
           <div className="py-4">
             <ul className="space-y-4">
-              {completedMatch.reverse().slice(0, maxCompletedMatch).map((item, index) => <li className="flex gap-4">
+              {completedMatch.reverse().slice(0, maxCompletedMatch).map((item, index) => <li key={item.id} className="flex gap-4">
                 <div className="w-4">
-                  <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
                   {index !== maxCompletedMatch-1 && <div className="h-full px-1 pb-3 pt-1">
                     <span className="block w-[4px] opacity-50 bg-amber-50 h-full"></span>
                   </div>}
